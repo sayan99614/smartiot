@@ -36,3 +36,25 @@
     transform: rotate(360deg);
   }
 }
+
+@media only screen and (max-width: 600px) {
+  .thr {
+    position: relative;
+    left: 80px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .mx-first {
+    position: relative;
+    right: 20px;
+  }
+}
+
+.mx-first {
+  position: relative;
+  right: 50px;
+}
+.mx {
+  position: relative;
+  right: 20px;
+}

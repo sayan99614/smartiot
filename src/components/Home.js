@@ -57,8 +57,8 @@ function Home() {
         {loginstatus && (
           <>
             <div className="row my-5">
-              <div className="col-sm-4 offset-sm-2">
-                <div>
+              <div className="col-md-4 offset-md-2 col-sm-6">
+                <div className="thr">
                   <Thermometer
                     theme="light"
                     value={temp.slice(0, 5)}
@@ -68,20 +68,22 @@ function Home() {
                     size="large"
                     height="300"
                   />
-                  <h1 className="mx-auto mt-2">Temperature</h1>
+                  <h1 className="mx-first mt-2">Temperature</h1>
                 </div>
               </div>
-              <div className="col-sm-4 offset-sm-2">
-                <Thermometer
-                  theme="light"
-                  value={hum.slice(0, 2)}
-                  max="100"
-                  steps="3"
-                  format="%"
-                  size="large"
-                  height="300"
-                />
-                <h1 className="mx-auto mt-2">Humidity</h1>
+              <div className="col-md-4 offset-md-2 col-sm-6">
+                <div className="thr">
+                  <Thermometer
+                    theme="light"
+                    value={hum.slice(0, 2)}
+                    max="100"
+                    steps="3"
+                    format="%"
+                    size="large"
+                    height="300"
+                  />
+                  <h1 className="mx mt-2">Humidity</h1>
+                </div>
               </div>
             </div>
           </>

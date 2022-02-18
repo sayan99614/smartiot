@@ -54,7 +54,7 @@ function Login() {
                             input.password === "sayan123"
                           ) {
                             dispatch(userLogin());
-                            navigate("../", { replace: false });
+                            navigate("../smartiot/", { replace: false });
                           } else {
                             alert("invalid credentials 🎌");
                           }
