@@ -18,6 +18,8 @@ function Card(props) {
         return "FRIDAY";
       case 6:
         return "SATURDAY";
+      default:
+        return null;
     }
   }
   return (

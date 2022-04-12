@@ -11,6 +11,7 @@ function Home() {
   useEffect(() => {
     let starCountRef = database.ref("/DHT11/Temperature/");
     let starCountRef2 = database.ref("/DHT11/Humidity/");
+    console.log(starCountRef);
     starCountRef.on("value", (snapshot) => {
       const data = snapshot.val();
       let arr = Object.keys(data);
